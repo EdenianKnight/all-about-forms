@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Form</title>
+</head>
+<body>
+    <h1 title="the main title">All About Forms</h1>
+
+    <form action="">
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your first name here">
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your last name here">
+
+        <label>Email <span style="color: red;">*</span></label>
+        <input type="email" placeholder="example@email.com" required>
+
+        <label>Password <span style="color: red;">*</span></label>
+        <input type="password" placeholder="Enter your password" required>
+
+        <label for="age">Age</label>
+        <input type="number"  min="13" max="19" name="age" id="age">
+
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label>Favorite Color: </label><br>
+        <input type="radio" name="color" id="red" value="red">
+        <label for="red">Red</label>
+        <input type="radio" name="color" id="blue" value="blue">
+        <label for="blue">Blue</label>
+        <input type="radio" name="color" id="green" value="green">
+        <label for="green">Green</label>
+        <br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobby1" id="reading" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobby2" id="gaming" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="hobby3" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="hobby4" id="music" value="music" checked>
+        <label for="music">Music</label>
+        <br><br>
+
+        <label for="subject">Favorite Subject: </label>
+        <select name="subject" id="subject">
+            <option value="">--Choose a subject--</option>
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+            <option value="art">Art</option>
+        </select>
+        <br><br>
+
+        <label for="about">Tell us about yourself</label>
+        <textarea name="about" id="about" rows="6" cols="10" placeholder="Write about yourself..."></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
